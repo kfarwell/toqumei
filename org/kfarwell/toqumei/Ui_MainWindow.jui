@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0" language="jambi">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>673</width>
+    <height>554</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Toqumei</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>res/icon.png</normaloff>res/icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #FFF;
+border: none;</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>com.trolltech.qt.core.Qt.ToolButtonStyle.ToolButtonIconOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="1" column="0">
+     <widget class="QScrollArea" name="index_scroll">
+      <property name="styleSheet">
+       <string notr="true">QScrollBar, QScrollBar::add-line, QScrollBar::sub-line {
+    border: none;
+    background-color: transparent;
+    color: transparent;
+}
+QScrollBar::handle {
+    background-color: #D3D3D3;
+    border-radius: 8px;
+}</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="index">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>673</width>
+         <height>455</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTextBrowser {
+    border: 1px solid #D3D3D3;
+}</string>
+       </property>
+       <layout class="QVBoxLayout" name="index_contents"/>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QFrame" name="nav">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>61</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>61</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E91E63;</string>
+      </property>
+      <property name="frameShape">
+       <enum>com.trolltech.qt.gui.QFrame.Shape.StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>com.trolltech.qt.gui.QFrame.Shadow.Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="logo">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>39</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>res/logo.png</normaloff>res/logo.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>120</width>
+           <height>39</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="logo_margin">
+         <property name="orientation">
+          <enum>com.trolltech.qt.core.Qt.Orientation.Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>com.trolltech.qt.gui.QSizePolicy.Policy.Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>39</width>
+           <height>0</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="compose">
+         <property name="minimumSize">
+          <size>
+           <width>39</width>
+           <height>39</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>39</width>
+           <height>39</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#compose:hover {
+    background-color: #D11B59;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>res/magnify.png</normaloff>res/pencil.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>673</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #E91E63;
+color: #FFF;</string>
+   </property>
+   <widget class="QMenu" name="menu_file">
+    <property name="styleSheet">
+     <string notr="true">background-color: #FFF;
+color: #000;</string>
+    </property>
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="action_newpost"/>
+    <addaction name="action_preferences"/>
+    <addaction name="action_quit"/>
+   </widget>
+   <addaction name="menu_file"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_quit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="action_preferences">
+   <property name="text">
+    <string>Preferences</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="action_newpost">
+   <property name="text">
+    <string>New Post</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

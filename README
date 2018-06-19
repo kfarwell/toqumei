@@ -1,0 +1,49 @@
+Toqumei
+=======
+Partial reference Java/Qt Tokumei <https://tokumei.co/> client.
+<http://kfarwell.org/projects/toqumei/>
+
+Build
+-----
+1. Download Qt Jambi <http://qtjambi.org/downloads>
+2. Make sure juic is in your PATH:
+
+    $ export PATH=$HOME/Downloads/qtjambi-linux64-community-4.8.7/bin:$PATH
+
+3. If not on linux64-gcc, copy the appropriate native Qt Jambi library to lib/
+
+    $ cp $HOME/Downloads/qtjambi-linux32-community-4.8.7/qtjambi-native-linux32-gcc-4.8.7.jar lib/
+
+4. Run build.sh
+
+    $ chmod +x build.sh && ./build.sh
+
+Run
+---
+
+    $ chmod +x toqumei.sh && ./toqumei.sh
+
+License
+-------
+Toqumei is distributed under the ISC license, reproduced below.
+
+Copyright (c) 2015, Kyle Farwell
+
+Permission to use, copy, modify, and/or distribute this software for any purpose
+with or without fee is hereby granted, provided that the above copyright notice
+and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS
+OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
+THIS SOFTWARE.
+
+The Tokumei logo is distributed under the CC0 license, available at
+<https://creativecommons.org/publicdomain/zero/1.0/legalcode>.
+
+The search icon is copyright (c) 2014, Google <http://www.google.com/design> and
+is distributed under the CC BY license, available at
+<https://github.com/google/material-design-icons/blob/master/LICENSE>.
